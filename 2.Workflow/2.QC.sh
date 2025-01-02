@@ -6,7 +6,6 @@ while getopts "i:o:a:r:w:" opt; do
     i) input=$OPTARG ;;
     o) output=$OPTARG ;;
     a) adapter=$OPTARG ;;
-    r) reference=$OPTARG ;;
     w) wetlab=$OPTARG ;;
     \?) echo "Invalid option: -$OPTARG" >&2; exit 1;;
     :) echo "Option -$OPTARG requires an argument." >&2; exit 1;;
